@@ -33,4 +33,5 @@ A fully functional eCommerce clothing website with product listings, shopping ca
 ## Setup
 
 1. Clone the repository:
-https://github.com/Jyothirmai-09/Apex-Planet
+   https://jyothirmai-09.github.io/Clothify-ecommerce-website/
+   
