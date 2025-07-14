@@ -30,8 +30,5 @@ A fully functional eCommerce clothing website with product listings, shopping ca
 - JavaScript (ES6)
 - LocalStorage API
 
-## Setup
-
-1. Clone the repository:
-   https://jyothirmai-09.github.io/Clothify-ecommerce-website/
-   
+-----
+Enjoy my clothify ecommerce
