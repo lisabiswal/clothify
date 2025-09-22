@@ -1,4 +1,3 @@
-// Demo clothing products
 const products = [
     {
         id: 1,
@@ -38,7 +37,6 @@ const products = [
     }
 ];
 
-// --- Cart Persistence ---
 function getCart() {
     return JSON.parse(localStorage.getItem('cart') || '[]');
 }
@@ -46,7 +44,6 @@ function setCart(cart) {
     localStorage.setItem('cart', JSON.stringify(cart));
 }
 
-// --- Products Page Logic ---
 if (document.getElementById('product-list')) {
     const productList = document.getElementById('product-list');
     productList.innerHTML = '';
@@ -76,7 +73,6 @@ window.addToCart = function(productId) {
     alert('Added to cart!');
 };
 
-// --- Cart Page Logic ---
 if (document.getElementById('cart-items')) {
     renderCart();
     document.getElementById('place-order-btn').onclick = function() {
@@ -85,7 +81,6 @@ if (document.getElementById('cart-items')) {
     };
     document.getElementById('order-form').onsubmit = function(e) {
         e.preventDefault();
-        // Clear cart and show success
         setCart([]);
         document.getElementById('cart-items').style.display = 'none';
         document.getElementById('cart-summary').style.display = 'none';
@@ -130,4 +125,5 @@ window.removeFromCart = function(productId) {
     cart = cart.filter(item => item.id !== productId);
     setCart(cart);
     renderCart();
+
 };
